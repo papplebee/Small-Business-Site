@@ -1,0 +1,938 @@
+/*
+	Author: Peter Applebee;
+	Title: Main CSS Document;
+	Project: TJC Task;
+	Date: 08/08/2014;
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+=====================================================
+END of CSS RESET
+=====================================================
+*/
+
+/*
+* {
+	outline: 1px solid black;
+}
+*/
+
+body {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 120%;
+	color: #000;
+	background-color: #EFEFEF;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+	color: #333;
+}
+
+/*
+	==================================================
+	Header
+	==================================================
+*/
+
+#header {
+	height: 70px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	background-color: #FFF;
+	border-bottom: 1px solid #EEE;
+	/*box-shadow: 0px 1px 5px #EEE;*/
+	z-index: +1;
+}
+
+#logo-mobile {
+	display: none;
+}
+
+#menu-button {
+	display: none;
+}
+
+#header ul#main-menu {
+	width: 700px;
+	margin: 5px auto;
+	padding: 0;
+}
+
+#header li {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	text-align: center;
+}
+
+#header a:link, #header a:visited {
+	margin: 20px 5px 24px 5px;
+	padding: 2px 5px;
+	display: inline-block;
+	font-size: 100%;
+	min-width: 100px;
+	text-transform: uppercase;
+}
+
+#header a:hover, #header a:active, #header a.thispage {
+	text-decoration: none;
+	color: #0065cd;
+	/*border-bottom: 2px solid #666;*/
+}
+
+li#logo {
+	margin: 0 15px;
+	padding: 0;
+}
+
+#logo img {
+	height: 60px;
+	width: auto;
+	padding: 5px 15px 10px 15px;
+	margin: 0;
+	background-color: #FFF;
+	border-bottom: 1px solid #EEE;
+	/*box-shadow: 0px 2px 1px #EEE;*/
+	border-radius: 0 0 20px 20px;
+	-moz-border-radius: 0 0 20px 20px;
+	-webkit-border-radius: 0 0 20px 20px;
+}
+
+.banner-fixed {
+	position: fixed;
+	top: 60px;
+	z-index: -1;*/
+}
+
+.banner-fixed img {
+	width: 100%;
+	margin: 0;
+
+}
+
+/*
+	============================================================
+	Hero
+	============================================================
+*/
+
+
+#wrapper {
+	margin-top: 60px;
+	height:;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
+
+#hero {
+	width: 100%;
+	height: 500px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#tagline {
+	width: 100%;
+	padding-bottom: 40px;
+	padding-top: 50px;
+	position: absolute;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#tagline h1 {
+	text-align: center;
+	font-size: 150%;
+	width: 90%;
+	margin: 0 auto;
+	color: #FFF;
+	font-family: 'Crete Round', serif;
+	font-variant: small-caps;
+}
+
+.blue-color-text {
+	color: #00CCFF;
+}
+
+#banner-relative {
+	display: none;
+}
+
+#meet-with {
+	width: 100%;
+	padding: 0;
+	position: absolute;
+	bottom: 0;
+	
+}
+
+h2 {
+	font-family: 'Crete Round', serif;
+	font-size: 120%;
+	text-transform: uppercase;
+}
+
+#meet-with h2 {
+	color: #FFF;
+	text-align: center;
+	padding: 10px 0;
+	margin: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#meetwith-ul {
+	display: block;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: auto;
+	background-color: #000;
+}
+
+#meet-with ul {
+	list-style: none;
+	margin: 0 auto;
+	width: 100%;
+	height: 50px;
+	background-color: rgba(0, 0, 0, 1);
+}
+
+#meet-with li {
+	color: #00CCFF;
+	display: inline-block;
+	float: left;
+	margin: 15px 2%;
+	width: 16%;
+	text-align: center;
+	font-size: 100%;
+}
+
+li#display-500px {
+	display: none;
+}
+
+/*
+	======================================================
+	Top Content
+	======================================================
+*/
+
+#main-content{
+
+}
+
+#main-content p {
+	margin: 10px;
+}
+
+.intro {
+	background-color: #FFF;
+	padding: 10%;
+	text-align: center;
+	line-height: 1.2;
+}
+
+#vehicle-images {
+	padding: 0 15% 40px 15%;
+	height: auto;
+	background-color: #FFF;
+}
+
+#vehicle-images img {
+	height: auto;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+
+/*
+	============================================
+	Vehicle Layout
+	============================================
+*/
+
+#vehicle-layout {
+	background-color: #FFF;
+	overflow: hidden;
+	padding: 0 5%;
+}
+
+#vehicle-info {
+	color: #FFF;
+	background-color: #000;
+	padding: 10px 2%;
+	width: 36%;
+	height: 100%;
+	float: right;
+	line-height: 1.2;
+	border-radius: 10px;
+}
+
+#vehicle-info p {
+	margin: 5% 0;
+}
+
+#layout-images {
+	margin: 10px 1%;
+	width: 58%;
+	height: 100%;
+	float: left;
+}
+
+img#interior {
+	width: 70%
+}
+
+img#stand {
+	width: 25%;
+}
+
+h3 {
+	margin: 10px 0 20px 0;
+	font-size: 100%;
+	font-family: 'Crete Round', serif;
+	text-transform: uppercase;
+}
+
+#further-info {
+	background-color: #FFF;
+	color: #000;
+	padding: 10% 10%;
+	text-align: center;
+	line-height: 1.2;
+}
+
+
+/*
+	======================================================
+	Footer
+	======================================================
+*/
+
+#footer {
+	clear: both;
+	width: 100%;
+	padding: 20px 0 20px 0;
+	background-color: #333;
+	background: -webkit-linear-gradient(right,#000,#001265);
+	background: -moz-linear-gradient(right,#000,#001265);
+	background: -ms-linear-gradient(right,#000,#001265);
+	background: linear-gradient(right,#000,#001265);
+	color: #FFF;
+	margin: 0;
+}
+
+#footer a:link, #footer a:visited {
+	color: #FFF;
+}
+
+.center {
+	text-align: center;
+}
+
+#contact {
+	width: 80%;
+	padding: 10px 2%;
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+	font-size: 80%;
+}
+
+#social-media li {
+	display: inline-block;
+	width: 50px;
+	margin-bottom: 20px;
+}
+
+#contact li {
+	line-height: 1.5;
+}
+
+.twitter {
+	background-image: url("images/twitterwhite25.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #FFF;
+	border-radius: 100%;
+}
+
+.twitter:hover {
+	background-image: url("images/twittercolor25.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #5ea9dd;
+	border-radius: 100%;
+}
+
+.facebook {
+	background-image: url("images/facebookwhite25.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #FFF;
+	border-radius: 100%;
+}
+
+.facebook:hover {
+	background-image: url("images/facebookcolor25.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #3b5998;
+	border-radius: 100%;
+}
+
+.linkedin {
+	background-image: url("images/linkedinwhite25.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #FFF;
+	border-radius: 100%;
+}
+
+.linkedin:hover {
+	background-image: url("images/linkedincolor25.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #007bb6;
+	border-radius: 100%;
+}
+
+#contact span {
+	font-weight: ;
+	color: #0065cd;
+}
+
+#map {
+	margin-top: 20px;
+	width: 100%;
+}
+
+#map #mapwide {
+	width: 100%;
+}
+
+#mapnarrow {
+	display: none;
+}
+
+
+#copyright {
+	width: 100%;
+	padding: 10px 0;
+	margin: 20px auto 0 auto;
+	text-align: center;
+	line-height: 1.5;
+	font-size: 60%;
+	background-color: #000;
+	background: -webkit-linear-gradient(right,#000,#001265);
+	background: -moz-linear-gradient(right,#000,#001265);
+	background: -ms-linear-gradient(right,#000,#001265);
+	background: linear-gradient(right,#000,#001265);
+}
+
+/*
+	=================================================================================
+	Responsive Media Queries
+	=================================================================================
+*/
+
+@media screen and (min-width: 1550px) {
+
+	#hero {
+		height: 800px;
+	}
+
+}
+
+
+@media screen and (min-width: 1350px) and (max-width: 1549px) {
+
+	#hero {
+		height: 700px;
+	}
+
+}
+
+
+@media screen and (min-width: 1250px) {
+
+	
+	#meet-with ul {
+		margin: 0 auto;
+		padding: 0;
+		width: 1250px;
+	}
+
+	#meet-with li {
+		width: 16%;
+	}
+
+
+}
+
+@media screen and (min-width:1091px) and (max-width: 1225px) {
+
+	#meet-with ul {
+		height: 55px;
+	}
+
+	#meet-with li {
+		margin-top: 20px;
+		margin-left: 1%;
+		margin-right: 1%;
+		width: 18%;
+		font-size: 100%;
+	}
+
+}
+
+@media screen and (max-width: 1090px) {
+
+	#meet-with ul {
+		height: 55px;
+	}
+
+	#meet-with li {
+		margin-top: 20px;
+		margin-left: 1%;
+		margin-right: 1%;
+		width: 18%;
+		font-size: 90%;
+	}
+
+}
+
+
+
+
+@media screen and (min-width: 1081px) {
+
+/*
+	======================================================
+	Top Content
+	======================================================
+*/
+
+	#main-content p {
+		margin: 10px auto;
+		width: 844px;
+	}
+
+	.intro {
+		padding: 108px 10%;
+	}
+
+	
+	#vehicle-imagesbox {
+		width: 760px;
+		margin: 0 auto;
+
+	}
+
+
+
+/*
+	============================================
+	Vehicle Layout
+	============================================
+*/
+
+	#vehicle-layout {
+		padding: 0 5%;
+	}
+
+
+	#vehicle-layoutbox {
+		width: 964px;
+		margin: 0 auto;
+	}
+
+	#vehicle-info {
+		padding: 10px 15px;
+		width: 350px;
+	}
+
+	#vehicle-info p {
+		margin: 10px 0;
+		width: 100%;
+	}
+
+	#layout-images {
+		margin: 10px;
+		width: 564px;
+	}
+
+
+	#further-info {
+		padding: 108px 10%;
+	}
+
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1349px) {
+
+	#hero {
+		height: 610px;
+	}
+
+}
+
+
+@media screen and (max-width: 985px) {
+
+	#meet-with ul {
+		height: 60px;
+	}
+
+	#meet-with li {
+		margin: 11px 3%;
+		width: 14%;
+		font-size: 100%;
+	}
+
+}
+
+
+@media screen and (max-width: 970px) {
+
+	#vehicle-info {
+		padding: 10px 4%;
+		width: 92%;
+	}
+
+	#vehicle-info p {
+		margin: 10px 0;
+	}
+
+	#layout-images {
+		margin: 0 auto;
+		padding: 5%;
+		width: 100%;
+		height: 100%;
+	}
+
+	img#interior {
+		width: 63%;
+		margin: 0 1%;
+	}
+
+	img#stand {
+		width: 21%;
+		margin: 0 1%;
+	}
+
+}
+
+
+@media screen and (max-width: 855px) {
+	
+
+	#hero {
+		height: 400px;
+	}
+
+	#meet-with ul {
+		height: 62px;
+	}
+
+	#meet-with li {
+		margin: 11px 3%;
+		width: 14%;
+		font-size: 100%;
+	}
+
+	
+}
+
+@media screen and (max-width: 730px) {
+
+	#header {
+		height: 100px;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		position: fixed;
+		top: 0;
+		background-color: #FFF;
+		border-bottom: 1px solid #EEE;
+		/*box-shadow: 0px 1px 5px #EEE;*/
+		z-index: +1;
+	}
+
+	#logo-mobile {
+		display: block;
+		margin: 0 auto;
+		width: 171px;
+		text-align: center;
+	}
+
+	#logo-mobile img {
+		margin: 10px 0;
+		width: 100%;
+	}
+
+	
+	#menu-button {
+		width: 100px;
+		height: 100px;
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-image: url("images/menublack50.png");
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	#menu-button:hover {
+	
+	}
+
+	#menu-button ul#nav {
+		position: absolute;
+		top: 100px;
+		left: 0px;
+		width: 100%;
+		height: 300px;
+		display: none;
+		border-bottom: 2px solid #333;
+	}
+
+
+	#header a:link, #header a:visited {
+		margin: 0;
+		padding: 50%;
+		display: block;
+		font-size: 200%;
+		width: 650px;
+		background-color: #FFF;
+		border-bottom: 2px solid #333;
+	}
+
+	#header a:hover, #header a:active, #header a.thispage {
+		text-decoration: none;
+		color: #FFF;
+		background-color: #000;
+		/*border-bottom: 2px solid #666;*/
+	}
+
+
+
+	#header ul#main-menu {
+		display: none;
+	}
+
+	#header li {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		text-align: left;
+	}
+
+
+	li#logo {
+		display: none;
+		}
+
+	.banner-fixed {
+		position: fixed;
+		top: 100px;
+		z-index: -1;
+	}
+
+	.banner-fixed img {
+		width: 100%;
+		margin: 0;
+
+	}
+
+	#wrapper {
+		margin-top: 100px;
+		width: 100%;
+		position: relative;
+	}
+
+	#map #mapwide {
+		display: none;
+	}
+
+	#map #mapnarrow {
+		display: block;
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 630px) {
+
+	#hero {
+		width: 100%;
+		height: auto;
+		position: relative;
+		background-color: #000;
+	}
+
+	#tagline {
+		position: relative;
+		background-color: rgba(0, 0, 0, 1.0);
+	}
+
+	.banner-fixed {
+		display: none;
+	}
+
+	#banner-relative {
+		display: block;
+		position: relative;
+		width: 100%;
+		height: auto;
+		padding: 0;
+	}
+
+	#banner-relative img {
+		position: relative;
+		width: 100%;
+		margin: 0;
+	}
+
+	#meet-with {
+		position: relative;		
+	}
+
+	#meet-with h2 {
+		padding: 13px 0 5px 0;
+		background-color: rgba(0, 0, 0, 1.0);
+	}
+
+	#meet-with ul {
+		height: 65px;
+		background-color: rgba(0, 0, 0, 1);
+	}
+
+	#meet-with li {
+		margin: 15px 2%;
+		width: 16%;
+		font-size: 90%;
+	}
+
+
+	#vehicle-images {
+		padding: 0 5% 40px 5%;
+		height: auto;
+		background-color: #FFF;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+
+	#meet-with ul {
+		height: 145px;
+	}
+
+	#meet-with li {
+		margin: 15px 2%;
+		width: 46%;
+	}
+
+	li#display-500px {
+		display: inline-block;
+	}
+
+}
+
+@media screen and (max-width: 355px) {
+
+	#meet-with ul {
+		height: 285px;
+		background-color: rgba(0, 0, 0, 1);
+	}
+
+	#meet-with li {
+		color: #00CCFF;
+		display: inline-block;
+		float: left;
+		margin: 15px 2%;
+		width: 96%;
+		text-align: center;
+		font-size: 100%;
+	}
+
+}
