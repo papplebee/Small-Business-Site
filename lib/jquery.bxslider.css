@@ -63,7 +63,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 2000;
+	z-index: 0;
 }
 
 /* PAGER */
@@ -106,18 +106,22 @@
 
 .bx-wrapper .bx-prev {
 	left: 0px;
-	background-image: url(arrowleft.png);
+	background-image: url(arrowlefttrans.png);
+	background-repeat: no-repeat;
+	background-position: center;
 	width: 100px;
-	height: 100px;
+	height: 100%;
 
 	opacity: 0.3
 }
 
 .bx-wrapper .bx-next {
 	right: 10px;
-	background-image: url(arrowright.png);
+	background-image: url(arrowrighttrans.png);
+	background-repeat: no-repeat;
+	background-position: center;
 	width: 100px;
-	height: 100px;
+	height: 100%;
 
 	opacity: 0.3
 }
@@ -132,14 +136,15 @@
 
 .bx-wrapper .bx-controls-direction a {
 	position: absolute;
-	top: 50%;
-	margin-top: -16px;
+	top: 0;
+	background-color: #FFF;
+	margin: 0 -5px;
 	outline: 0;
 	width: 75px;
-	height: 100px;
+	height: 100%;
 	text-indent: -9999px;
-	z-index: 9999;
-	border-radius: 10px;
+	z-index: 0;
+	border-radius: 0;
 }
 
 .bx-wrapper .bx-controls-direction a.disabled {

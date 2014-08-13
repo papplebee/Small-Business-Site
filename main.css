@@ -918,10 +918,10 @@ h3 {
 
 }
 
-@media screen and (max-width: 355px) {
+@media screen and (max-width: 405px) {
 
 	#meet-with ul {
-		height: 285px;
+		height: 300px;
 		background-color: rgba(0, 0, 0, 1);
 	}
 
