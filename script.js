@@ -1,15 +1,15 @@
-    $(document).ready(function () {    
+    jQuery(document).ready(function() {    
         
-        $('#header div#menu-button').hover(
-            function () {
-                //show its submenu
-                $('ul', this).stop().slideDown(100);
-            },
-            function () {
-                //hide its submenu
-                $('ul', this).stop().slideUp(100);            
-            }
-        );
+        $('div#menu-button').on('click', function() {
+                var menu = $(this).find('ul')
+                //toggle the menu on click
+                menu.slideToggle(100);
+                //slide up the menu on mouse leave
+                $(this).on('mouseleave', function() {
+                	menu.slideUp(100);
+                });
+            });
+
 
 
         $('.bxslider').bxSlider();
