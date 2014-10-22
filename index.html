@@ -1,24 +1,30 @@
 <!DOCTYPE html>
+<!--=======================================================================
+
+TITLE: Main Index HTML Document;
+PROJECT: Small Business Website Example, Ver. 1.0;
+AUTHOR: Peter Applebee
+
+========================================================================-->
+
 <html lang="en">
 <head>
-	<title>Papplebee's Example Business Website</title>
-
+	<!-- Meta Information -->
 	<meta charset="UTF-8">
+	<title>Papplebee's Example Business Website</title>
 	<meta name="description" content="#">
 	<meta name="keywords" content="#">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!-- Stylesheet Links -->
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="lib/jquery.bxslider.css" rel="stylesheet" />
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans|Crete+Round' rel='stylesheet' type='text/css'>
 
+	<!-- JavaScript Sources -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	
-	<script src="js/jquery.bxslider.min.js"></script>
-	<link href="lib/jquery.bxslider.css" rel="stylesheet" />
-	
+	<script src="js/jquery.bxslider.min.js"></script>	
 	<script type="text/javascript" src="script.js"></script>
-
-
 </head>
 
 <body>
@@ -32,7 +38,7 @@
 				<li><a href="#">Page 2</a></li>
 				<li id="logo"><img src="images/spaceship-md.png" alt="Logo"></li>
 				<li><a href="#">Page 3</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a class="contact-link" href="#">Contact</a></li>
 			</ul>
 
 			<div id="menu-button">
@@ -40,13 +46,13 @@
 					<li><a href="index.html">Home</a></li>
 					<li><a href="#">Page 2</a></li>
 					<li><a href="#">Page 3</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a class="contact-link" href="#">Contact</a></li>
 				</ul>
 			</div>
 	</div>
 
 			<div class="banner-fixed">
-				<img src="images/titan-aerospace-solara-50-2660.jpg" alt="Hero Image">
+				<img src="images/hero-banner01-2660-1469.jpg" alt="Hero Image">
 			</div>
 	
 
@@ -58,7 +64,7 @@
 			</div>
 
 			<div id="banner-relative">
-				<img src="images/titan-aerospace-solara-50wide.jpg" alt="Hero Image">
+				<img src="images/hero-banner01-1920-798.jpg" alt="Hero Image">
 			</div>
 
 			<div id="meet-with">
@@ -85,10 +91,10 @@
 			<div id="vehicle-images">
 				<div id="vehicle-imagesbox">
 					<ul class="bxslider">
-  						<li><img src="images/Task_01.jpg" alt="vehicle 1"></li>
-					  	<li><img src="images/Task_02.jpg" alt="vehicle 2"></li>
-					  	<li><img src="images/Task_03.jpg" alt="vehicle inside 1"></li>
-					  	<li><img src="images/Task_05.jpg" alt="vehicle inside 2"></li>
+  						<li><img src="images/img-01.jpg" alt="vehicle 1"></li>
+					  	<li><img src="images/img-02.jpg" alt="vehicle 2"></li>
+					  	<li><img src="images/img-03.jpg" alt="vehicle inside 1"></li>
+					  	<li><img src="images/img-04.jpg" alt="vehicle inside 2"></li>
   					</ul>
 				</div>
 			</div>
@@ -115,8 +121,7 @@
 					</div>
 
 					<div id="layout-images">
-						<img id="interior" src="images/Task_04.jpg" alt="interior layout">
-						<img id="stand" src="images/Task_06.jpg" alt="stand">
+						<img id="interior" src="images/img-07.jpg" alt="interior layout">
 					</div>
 
 					

@@ -190,13 +190,13 @@
 /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
 
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
-	text-align: left;
-	width: 80%;
+	text-align: center;
+	width: 100%;
 }
 
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
-	right: 0;
-	width: 35px;
+	width: 100%;
+	bottom: -60px;
 }
 
 /* IMAGE CAPTIONS */

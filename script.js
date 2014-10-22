@@ -6,8 +6,15 @@
                 
             });
 
+        $('.bxslider').bxSlider({
+            auto: true,
+            autoControls: true
+        });
 
-
-        $('.bxslider').bxSlider();
+        $('.contact-link').on('click', function() {
+            $('html, body').animate({
+                scrollTop: $("#footer").offset().top
+            }, 1000); 
+        });
         
     });
